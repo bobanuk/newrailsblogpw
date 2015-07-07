@@ -25,6 +25,7 @@
 
 <% if user_signed_in? %>
     <span>Hi, <%= current_user.email %></span>
+    <%= image_tag(current_user.avatar.url, class: 'img-circle', size: "50x50")  %>
     <%= link_to 'Settings', edit_user_registration_path %>
     <%= link_to 'Output', destroy_user_session_path, :method => :delete %>
 <% else %>
