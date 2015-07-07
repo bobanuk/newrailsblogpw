@@ -29,6 +29,8 @@ gem "devise"
 gem 'carrierwave'
 gem 'mini_magick'
 gem "punching_bag"
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 # Use Unicorn as the app server
 gem 'unicorn'
