@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "devise"
 gem 'carrierwave'
 gem 'mini_magick'
+gem "punching_bag"
 
 # Use Unicorn as the app server
 gem 'unicorn'
