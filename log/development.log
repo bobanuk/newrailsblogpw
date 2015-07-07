@@ -98,3 +98,280 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRoles (20150707143253)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (105.6ms)[0m  [1mCREATE TABLE "roles" ("id" serial primary key, "name" character varying, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150707143253"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddPartToPosts (20150707143358)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "posts" ADD "user_id" character varying DEFAULT '0'[0m
+PG::DuplicateColumn: ОШИБКА:  колонка "user_id" отношения "posts" уже существует
+: ALTER TABLE "posts" ADD "user_id" character varying DEFAULT '0'
+  [1m[35m (0.1ms)[0m  ROLLBACK
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-07 18:36:09 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 508ms (Views: 482.3ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-07-07 18:36:13 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 139ms (Views: 113.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-07-07 18:36:19 +0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (104.5ms)
+  Rendered posts/new.html.erb within layouts/application (116.2ms)
+Completed 200 OK in 171ms (Views: 169.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2015-07-07 18:36:27 +0400
+Processing by RolesController#index as HTML
+  [1m[35mRole Load (6.2ms)[0m  SELECT "roles".* FROM "roles"
+  Rendered roles/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 107ms (Views: 90.6ms | ActiveRecord: 8.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddPartToUsers (20150707143836)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (52.6ms)[0m  [1mALTER TABLE "users" ADD "role_id" character varying DEFAULT '1'[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150707143836"]]
+  [1m[36m (29.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'roles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/roles" for 127.0.0.1 at 2015-07-07 18:39:28 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RolesController#index as HTML
+  [1m[35mRole Load (0.7ms)[0m  SELECT "roles".* FROM "roles"
+  Rendered roles/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 257ms (Views: 241.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2015-07-07 18:39:29 +0400
+Processing by RolesController#new as HTML
+  Rendered roles/_form.html.erb (46.7ms)
+  Rendered roles/new.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 106ms (Views: 98.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+Processing by RolesController#new as HTML
+  Rendered roles/_form.html.erb (9.8ms)
+  Rendered roles/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 98ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/scaffolds.self-efe9e991a0b446ca1a2891143d173400bbba89fbf32077f17b9d628302c6be68.css?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started GET "/assets/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-07 18:39:35 +0400
+
+
+Started POST "/roles" for 127.0.0.1 at 2015-07-07 18:39:44 +0400
+Processing by RolesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gadyzSqySHKR3uXUAQ02LGb3AS+43lz5MCR+z6CZNsVjXFHrOK3YysApxG0v9WPPzFX+DZ1YK6ZA/gObr/chPA==", "role"=>{"name"=>"user", "description"=>""}, "commit"=>"Create Role"}
+  [1m[36m (3.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "roles" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "user"], ["description", ""], ["created_at", "2015-07-07 14:39:44.049585"], ["updated_at", "2015-07-07 14:39:44.049585"]]
+  [1m[36m (26.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/roles/1
+Completed 302 Found in 46ms (ActiveRecord: 36.1ms)
+
+
+Started GET "/roles/1" for 127.0.0.1 at 2015-07-07 18:39:44 +0400
+Processing by RolesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRole Load (0.6ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered roles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 48.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2015-07-07 18:39:45 +0400
+Processing by RolesController#index as HTML
+  [1m[36mRole Load (7.2ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  Rendered roles/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 87ms (Views: 76.9ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2015-07-07 18:39:46 +0400
+Processing by RolesController#new as HTML
+  Rendered roles/_form.html.erb (1.3ms)
+  Rendered roles/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles" for 127.0.0.1 at 2015-07-07 18:39:54 +0400
+Processing by RolesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j5Z1kkwcqtC8+ETpo0WGo9zM+/3pMj5x4R6V55AT6NBtbVa0XgM6aO0PZVCNvdNAdm4E38y0SS6RxOizn33/KQ==", "role"=>{"name"=>"moderator", "description"=>""}, "commit"=>"Create Role"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "roles" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "moderator"], ["description", ""], ["created_at", "2015-07-07 14:39:54.099067"], ["updated_at", "2015-07-07 14:39:54.099067"]]
+  [1m[35m (19.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/roles/2
+Completed 302 Found in 27ms (ActiveRecord: 22.2ms)
+
+
+Started GET "/roles/2" for 127.0.0.1 at 2015-07-07 18:39:54 +0400
+Processing by RolesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered roles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2015-07-07 18:39:55 +0400
+Processing by RolesController#index as HTML
+  [1m[35mRole Load (0.4ms)[0m  SELECT "roles".* FROM "roles"
+  Rendered roles/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 99ms (Views: 98.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2015-07-07 18:40:01 +0400
+Processing by RolesController#new as HTML
+  Rendered roles/_form.html.erb (10.9ms)
+  Rendered roles/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 98ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/roles" for 127.0.0.1 at 2015-07-07 18:40:03 +0400
+Processing by RolesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OHdVfcysweBRAbq7UG82CSJNa8WO5fZJJPWIl3O9WHXajHZb3rNRWAD2mwJ+l2PqiO+U56tjgRZUL/XDfNNPjA==", "role"=>{"name"=>"admin", "description"=>""}, "commit"=>"Create Role"}
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "roles" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "admin"], ["description", ""], ["created_at", "2015-07-07 14:40:03.481619"], ["updated_at", "2015-07-07 14:40:03.481619"]]
+  [1m[36m (12.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/roles/3
+Completed 302 Found in 22ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/roles/3" for 127.0.0.1 at 2015-07-07 18:40:03 +0400
+Processing by RolesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRole Load (2.3ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered roles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2015-07-07 18:40:04 +0400
+Processing by RolesController#index as HTML
+  [1m[36mRole Load (0.6ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  Rendered roles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 127ms (Views: 125.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/roles/1" for 127.0.0.1 at 2015-07-07 18:40:07 +0400
+Processing by RolesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRole Load (0.5ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered roles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddOmniauthToUsers (20150707144103)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.4ms)[0m  [1mALTER TABLE "users" ADD "name" character varying[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150707144103"]]
+  [1m[36m (7.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'roles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
