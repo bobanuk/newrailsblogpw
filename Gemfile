@@ -35,6 +35,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'social-share-button'
 gem "omniauth"
 gem "omniauth-google-oauth2"
+gem 'omniauth-facebook'
 
 # Use Unicorn as the app server
 gem 'unicorn'
