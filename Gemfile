@@ -33,6 +33,8 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'friendly_id', '~> 5.1.0'
 gem 'social-share-button'
+gem "omniauth"
+gem "omniauth-google-oauth2"
 
 # Use Unicorn as the app server
 gem 'unicorn'
