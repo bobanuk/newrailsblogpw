@@ -27,7 +27,7 @@ class User < ActiveRecord::Base
     end
     user
   end
-  
+
 
   private
   def avatar_size

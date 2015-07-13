@@ -36,6 +36,7 @@ gem 'social-share-button'
 gem 'omniauth', '1.2.2'
 gem 'omniauth-oauth2', '1.3.1'
 gem "omniauth-google-oauth2"
+gem 'bootstrap-sass', '~> 3.3.5'
 
 # Use Unicorn as the app server
 gem 'unicorn'
