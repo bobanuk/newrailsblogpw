@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem "devise"
+gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem "punching_bag"
@@ -33,9 +33,9 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'friendly_id', '~> 5.1.0'
 gem 'social-share-button'
-gem "omniauth"
+gem 'omniauth', '1.2.2'
+gem 'omniauth-oauth2', '1.3.1'
 gem "omniauth-google-oauth2"
-gem 'omniauth-facebook'
 
 # Use Unicorn as the app server
 gem 'unicorn'
