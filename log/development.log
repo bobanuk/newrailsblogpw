@@ -8509,3 +8509,2466 @@ Processing by PostsController#index as HTML
   [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
   Rendered posts/index.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 252ms (Views: 221.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 11:47:32 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (374.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (372.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (121.5ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (174.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  Rendered posts/index.html.erb within layouts/application (312.2ms)
+Completed 200 OK in 9807ms (Views: 7146.1ms | ActiveRecord: 1283.5ms)
+
+
+Started GET "/assets/posts.self-15f4c602dd3899726bd4d058f7960de3605079b539af92c66ada6a9811c125b2.css?body=1" for 127.0.0.1 at 2015-07-16 11:47:46 +0400
+
+
+Started GET "/assets/scaffolds.self-efe9e991a0b446ca1a2891143d173400bbba89fbf32077f17b9d628302c6be68.css?body=1" for 127.0.0.1 at 2015-07-16 11:47:46 +0400
+
+
+Started GET "/assets/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 11:47:46 +0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2015-07-16 11:47:46 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 11:47:46 +0400
+
+
+Started GET "/assets/social-share-button.self-14e9613907ee4f883defc96303d993bacfc19e1d37ccb7f28c997ea83f248b10.css?body=1" for 127.0.0.1 at 2015-07-16 11:47:46 +0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/social-share-button.self-6082d8b31e4f65f78775da9c378e1bac8849e640f8c62277baa283398a9daf9e.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-16 11:47:47 +0400
+
+
+Started GET "/users/danila" for 127.0.0.1 at 2015-07-16 11:47:53 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"danila"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."slug" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["slug", "danila"]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (387.9ms)
+Completed 200 OK in 570ms (Views: 551.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2015-07-16 11:47:58 +0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "1"]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.4ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/_form.html.erb (2368.0ms)
+  Rendered posts/edit.html.erb within layouts/application (2648.5ms)
+Completed 200 OK in 2879ms (Views: 2865.7ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/posts/1" for 127.0.0.1 at 2015-07-16 11:48:12 +0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hkv7P28YSkPm/sOHmMUsIhTlXc74I2iuR8cPjT4qOknJaPz19jU0JWqrHTnMvwlVlkSIUVAuZRuernQB4VtoPg==", "post"=>{"title"=>"firsr", "slug"=>"", "content"=>"text text edit"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (1.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "1"]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (2.0ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+Unpermitted parameter: slug
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."id" != 1) AND "posts"."slug" = $1 LIMIT 1  [["slug", "firsr"]]
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "posts" SET "content" = $1, "slug" = $2, "updated_at" = $3 WHERE "posts"."id" = $4[0m  [["content", "text text edit"], ["slug", "firsr"], ["updated_at", "2015-07-16 07:48:12.760430"], ["id", 1]]
+  [1m[35m (29.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/firsr
+Completed 302 Found in 682ms (ActiveRecord: 34.2ms)
+
+
+Started GET "/posts/firsr" for 127.0.0.1 at 2015-07-16 11:48:12 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"firsr"}
+  [1m[36mPost Load (3.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "firsr"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.9ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (303.1ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 1], ["punchable_type", "Post"], ["starts_at", "2015-07-16 07:48:13.826592"], ["ends_at", "2015-07-16 07:48:13.826592"], ["average_time", "2015-07-16 07:48:13.826592"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.9ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 1], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 1815ms (Views: 515.8ms | ActiveRecord: 318.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDashboards (20150716082516)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4288.3ms)[0m  [1mCREATE TABLE "dashboards" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150716082516"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'dashboards'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'friendly_id_slugs'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'punches'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'roles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:38:14 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1641ms (Views: 1515.5ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:38:16 +0400
+
+
+Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:38:16 +0400
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2015-07-16 12:38:18 +0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (414.5ms)
+Completed 200 OK in 782ms (Views: 745.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/danila" for 127.0.0.1 at 2015-07-16 12:38:20 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"danila"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."slug" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["slug", "danila"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 244ms (Views: 230.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2015-07-16 12:38:24 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "5"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (9.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (10.5ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 08:38:24.876185"], ["ends_at", "2015-07-16 08:38:24.876185"], ["average_time", "2015-07-16 08:38:24.876185"]]
+  [1m[35m (279.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 818ms (Views: 153.3ms | ActiveRecord: 302.4ms)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at 2015-07-16 12:38:27 +0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "5"]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (13.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.5ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/_form.html.erb (15.5ms)
+  Rendered posts/edit.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 301ms (Views: 265.4ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-07-16 12:38:33 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.3ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 173ms (Views: 159.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:38:35 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.6ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (4.9ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 421ms (Views: 356.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2015-07-16 12:39:08 +0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.4ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered admin/dashboard/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 576ms (Views: 544.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:39:17 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (3.5ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  Rendered admin/posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 324ms (Views: 237.6ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/users/danila" for 127.0.0.1 at 2015-07-16 12:39:44 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"danila"}
+  [1m[35mUser Load (21.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."slug" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["slug", "danila"]]
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.4ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (11.8ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 411ms (Views: 351.3ms | ActiveRecord: 36.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:40:44 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (2.7ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (103.3ms)
+Completed 200 OK in 722ms (Views: 436.9ms | ActiveRecord: 48.8ms)
+
+
+Started GET "/admin/posts/5/edit" for 127.0.0.1 at 2015-07-16 12:40:49 +0400
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "5"]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered admin/posts/_form.html.erb (21.4ms)
+  Rendered admin/posts/edit.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 291ms (Views: 277.5ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/admin/posts/5" for 127.0.0.1 at 2015-07-16 12:40:58 +0400
+Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wm0mzS7uzPdxkVB6VaLcDb+OAPWK83atW4aFeU+H83kVTiEHt8Oykf3EjsQB2Pl6PS/VaiL+exiC7/71kPahDg==", "post"=>{"title"=>"five", "slug"=>"", "content"=>"text text", "status"=>"active"}, "commit"=>"Update Post", "id"=>"5"}
+  [1m[35mPost Load (8.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "5"]]
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (1.9ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Unpermitted parameter: slug
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."id" != 5) AND "posts"."slug" = $1 LIMIT 1[0m  [["slug", "five"]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "status" = $1, "slug" = $2, "updated_at" = $3 WHERE "posts"."id" = $4  [["status", "active"], ["slug", "five"], ["updated_at", "2015-07-16 08:40:58.866359"], ["id", 5]]
+  [1m[36m (55.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/five
+Completed 302 Found in 322ms (ActiveRecord: 70.0ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 12:40:58 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "five"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 08:40:58.989628"], ["ends_at", "2015-07-16 08:40:58.989628"], ["average_time", "2015-07-16 08:40:58.989628"]]
+  [1m[36m (163.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 400ms (Views: 199.6ms | ActiveRecord: 167.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:41:05 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (7.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (2.8ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (3.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (3.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 595ms (Views: 547.1ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-07-16 12:41:12 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 242ms (Views: 220.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-07-16 12:41:16 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (5.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (1.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (2.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 444ms (Views: 386.7ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 12:41:27 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[35mPost Load (2.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "five"]]
+  [1m[36mUser Load (5.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (4.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (10.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 08:41:27.599451"], ["ends_at", "2015-07-16 08:41:27.599451"], ["average_time", "2015-07-16 08:41:27.599451"]]
+  [1m[36m (138.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 437ms (Views: 229.0ms | ActiveRecord: 164.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:41:31 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (1.2ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (3.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (3.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (106.2ms)
+Completed 200 OK in 505ms (Views: 462.8ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 12:41:52 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "five"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.4ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 08:41:52.451760"], ["ends_at", "2015-07-16 08:41:52.451760"], ["average_time", "2015-07-16 08:41:52.451760"]]
+  [1m[36m (99.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 357ms (Views: 221.4ms | ActiveRecord: 102.6ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:43:01 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (5.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (4.8ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 491ms (Views: 361.0ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/admin/posts/6/edit" for 127.0.0.1 at 2015-07-16 12:43:04 +0400
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (1.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "6"]]
+  [1m[36mPost Load (2.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (4.5ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered admin/posts/_form.html.erb (4.2ms)
+  Rendered admin/posts/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 365ms (Views: 328.3ms | ActiveRecord: 9.2ms)
+
+
+Started PATCH "/admin/posts/6" for 127.0.0.1 at 2015-07-16 12:43:07 +0400
+Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KIYc9JO2/o09GhMp4iIhGb1qh36TyoorREd9/veRIvFnpRs+CpuA67FPzZe2WARuP8tS4TvHh56dLgZyKOBwhg==", "post"=>{"title"=>"six", "slug"=>"", "content"=>"text text", "status"=>"active"}, "commit"=>"Update Post", "id"=>"6"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "6"]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (3.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Unpermitted parameter: slug
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "posts" WHERE ("posts"."id" != 6) AND "posts"."slug" = $1 LIMIT 1[0m  [["slug", "six"]]
+  [1m[35mSQL (0.2ms)[0m  UPDATE "posts" SET "status" = $1, "slug" = $2, "updated_at" = $3 WHERE "posts"."id" = $4  [["status", "active"], ["slug", "six"], ["updated_at", "2015-07-16 08:43:07.705542"], ["id", 6]]
+  [1m[36m (78.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/posts
+Completed 302 Found in 128ms (ActiveRecord: 84.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:43:07 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (8.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (5.3ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (130.6ms)
+Completed 200 OK in 880ms (Views: 800.2ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/admin/posts?page=2" for 127.0.0.1 at 2015-07-16 12:43:12 +0400
+Processing by Admin::PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 10
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 207ms (Views: 189.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:43:15 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.3ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 389ms (Views: 352.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/posts/new" for 127.0.0.1 at 2015-07-16 12:44:03 +0400
+Processing by Admin::PostsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered admin/posts/_form.html.erb (4.0ms)
+  Rendered admin/posts/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 275ms (Views: 242.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:45:41 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 273ms (Views: 212.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:46:34 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (8.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (7.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (14.9ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (204.8ms)
+Completed 200 OK in 1141ms (Views: 1015.8ms | ActiveRecord: 31.5ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:46:38 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (1.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (7.4ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (6.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (5.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (72.6ms)
+Completed 200 OK in 724ms (Views: 653.6ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:46:46 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (5.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.7ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (1.3ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (5.4ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (84.8ms)
+Completed 200 OK in 560ms (Views: 521.6ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:46:48 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (1.5ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (3.1ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 271ms (Views: 240.8ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/posts.self-15f4c602dd3899726bd4d058f7960de3605079b539af92c66ada6a9811c125b2.css?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/scaffolds.self-efe9e991a0b446ca1a2891143d173400bbba89fbf32077f17b9d628302c6be68.css?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/social-share-button.self-14e9613907ee4f883defc96303d993bacfc19e1d37ccb7f28c997ea83f248b10.css?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/social-share-button.self-6082d8b31e4f65f78775da9c378e1bac8849e640f8c62277baa283398a9daf9e.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-16 12:46:49 +0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:47:44 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (1.7ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 306ms (Views: 282.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:44 +0400
+
+
+Started GET "/assets/posts.self-15f4c602dd3899726bd4d058f7960de3605079b539af92c66ada6a9811c125b2.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:44 +0400
+
+
+Started GET "/assets/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:44 +0400
+
+
+Started GET "/assets/social-share-button.self-14e9613907ee4f883defc96303d993bacfc19e1d37ccb7f28c997ea83f248b10.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:44 +0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:44 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:44 +0400
+
+
+Started GET "/assets/scaffolds.self-efe9e991a0b446ca1a2891143d173400bbba89fbf32077f17b9d628302c6be68.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/social-share-button.self-6082d8b31e4f65f78775da9c378e1bac8849e640f8c62277baa283398a9daf9e.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:45 +0400
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:47:58 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mUser Load (5.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (11.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (9.4ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 528ms (Views: 438.3ms | ActiveRecord: 31.6ms)
+
+
+Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:58 +0400
+
+
+Started GET "/assets/posts.self-15f4c602dd3899726bd4d058f7960de3605079b539af92c66ada6a9811c125b2.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:58 +0400
+
+
+Started GET "/assets/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:58 +0400
+
+
+Started GET "/assets/scaffolds.self-efe9e991a0b446ca1a2891143d173400bbba89fbf32077f17b9d628302c6be68.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:58 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:58 +0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:58 +0400
+
+
+Started GET "/assets/social-share-button.self-14e9613907ee4f883defc96303d993bacfc19e1d37ccb7f28c997ea83f248b10.css?body=1" for 127.0.0.1 at 2015-07-16 12:47:58 +0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/social-share-button.self-6082d8b31e4f65f78775da9c378e1bac8849e640f8c62277baa283398a9daf9e.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-16 12:47:59 +0400
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:48:20 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (1.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (2.1ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (76.3ms)
+Completed 200 OK in 686ms (Views: 618.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/posts.self-15f4c602dd3899726bd4d058f7960de3605079b539af92c66ada6a9811c125b2.css?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/scaffolds.self-efe9e991a0b446ca1a2891143d173400bbba89fbf32077f17b9d628302c6be68.css?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/social-share-button.self-14e9613907ee4f883defc96303d993bacfc19e1d37ccb7f28c997ea83f248b10.css?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/social-share-button.self-6082d8b31e4f65f78775da9c378e1bac8849e640f8c62277baa283398a9daf9e.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-16 12:48:21 +0400
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:49:42 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (4.5ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 263ms (Views: 237.5ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:50:58 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mUser Load (4.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.3ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (82.9ms)
+Completed 200 OK in 459ms (Views: 410.3ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/posts.self-15f4c602dd3899726bd4d058f7960de3605079b539af92c66ada6a9811c125b2.css?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/scaffolds.self-efe9e991a0b446ca1a2891143d173400bbba89fbf32077f17b9d628302c6be68.css?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/social-share-button.self-14e9613907ee4f883defc96303d993bacfc19e1d37ccb7f28c997ea83f248b10.css?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/social-share-button.self-6082d8b31e4f65f78775da9c378e1bac8849e640f8c62277baa283398a9daf9e.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-16 12:50:59 +0400
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:51:00 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mUser Load (7.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (15.3ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 513ms (Views: 448.4ms | ActiveRecord: 24.2ms)
+
+
+Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/posts.self-15f4c602dd3899726bd4d058f7960de3605079b539af92c66ada6a9811c125b2.css?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/scaffolds.self-efe9e991a0b446ca1a2891143d173400bbba89fbf32077f17b9d628302c6be68.css?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/social-share-button.self-14e9613907ee4f883defc96303d993bacfc19e1d37ccb7f28c997ea83f248b10.css?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/social-share-button.self-6082d8b31e4f65f78775da9c378e1bac8849e640f8c62277baa283398a9daf9e.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-07-16 12:51:01 +0400
+
+
+Started GET "/admin/posts?page=2" for 127.0.0.1 at 2015-07-16 12:51:07 +0400
+Processing by Admin::PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (2.4ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (2.3ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 10[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 267ms (Views: 218.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:51:30 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (1.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 662ms (Views: 644.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-07-16 12:51:33 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (1.6ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered posts/_form.html.erb (4.1ms)
+  Rendered posts/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 208ms (Views: 187.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-07-16 12:51:49 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M0JahXk9YLg/reR/M60Xbl3guCTrW78NzJbdIqDlwkB8YV1P4BAe3rP4OsFn1zIZ30Ftu0NWsrgV/6auf5SQNw==", "post"=>{"title"=>"test", "slug"=>"test", "content"=>"test test"}, "commit"=>"Create Post"}
+Unpermitted parameter: slug
+  [1m[36mUser Load (4.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (2.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+Unpermitted parameter: slug
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."id" IS NOT NULL) AND "posts"."slug" = $1 LIMIT 1  [["slug", "test"]]
+  [1m[36mSQL (84.6ms)[0m  [1mINSERT INTO "posts" ("title", "content", "user_id", "status", "slug", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test"], ["content", "test test"], ["user_id", 1], ["status", "deactivate"], ["slug", "test"], ["created_at", "2015-07-16 08:51:50.022786"], ["updated_at", "2015-07-16 08:51:50.022786"]]
+  [1m[35m (335.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/test
+Completed 302 Found in 490ms (ActiveRecord: 426.6ms)
+
+
+Started GET "/posts/test" for 127.0.0.1 at 2015-07-16 12:51:50 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"test"}
+  [1m[36mPost Load (4.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "test"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 13], ["punchable_type", "Post"], ["starts_at", "2015-07-16 08:51:50.507945"], ["ends_at", "2015-07-16 08:51:50.507945"], ["average_time", "2015-07-16 08:51:50.507945"]]
+  [1m[35m (197.5ms)[0m  COMMIT
+  [1m[36mUser Load (6.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (7.0ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 13], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 556ms (Views: 318.8ms | ActiveRecord: 217.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-07-16 12:51:52 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 206ms (Views: 196.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:51:57 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (4.9ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 242ms (Views: 207.3ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:52:01 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.5ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (8.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (5.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (5.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 652ms (Views: 599.0ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2015-07-16 12:52:10 +0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (2.7ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered admin/dashboard/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 359ms (Views: 318.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:52:11 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 335ms (Views: 262.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 12:52:16 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (1.8ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (92.6ms)
+Completed 200 OK in 484ms (Views: 448.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/admin/posts?page=2" for 127.0.0.1 at 2015-07-16 12:52:19 +0400
+Processing by Admin::PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (1.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 10
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 267ms (Views: 223.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/admin/posts?page=1" for 127.0.0.1 at 2015-07-16 12:52:22 +0400
+Processing by Admin::PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.5ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (95.5ms)
+Completed 200 OK in 356ms (Views: 320.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2015-07-16 12:53:12 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "7"]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 7], ["punchable_type", "Post"], ["starts_at", "2015-07-16 08:53:12.966726"], ["ends_at", "2015-07-16 08:53:12.966726"], ["average_time", "2015-07-16 08:53:12.966726"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 7], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 250ms (Views: 232.5ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-07-16 12:53:39 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uzQt+qw8WF5ajFYrs85l41zPXInfWGAlAcQBi8yzKyP0FyowNREmONbZiJXntECU3m6JFndVbZDYrXoHE8J5VA=="}
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/posts?page=1
+Completed 302 Found in 230ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/admin/posts?page=1" for 127.0.0.1 at 2015-07-16 12:53:40 +0400
+Processing by Admin::PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (9.2ms)
+  Rendered shared/_sign_in.html.erb (2.5ms)
+  Rendered shared/_sign_up.html.erb (2.5ms)
+Completed 200 OK in 301ms (Views: 286.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-07-16 12:53:45 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0VO6HZK99rYLMmOcApiMuf6w2hWWH4DwnQgM6zU6R0rOIPWt3C5qDKnRT0TN8Qt1YzfdQ9RpItE6kML+JqhUhA==", "user"=>{"email"=>"babanovs@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "babanovs@gmail.com"]]
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0VO6HZK99rYLMmOcApiMuf6w2hWWH4DwnQgM6zU6R0rOIPWt3C5qDKnRT0TN8Qt1YzfdQ9RpItE6kML+JqhUhA==", "user"=>{"email"=>"babanovs@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.8ms)
+  Rendered shared/_sign_in.html.erb (1.6ms)
+  Rendered shared/_sign_up.html.erb (1.2ms)
+Completed 200 OK in 363ms (Views: 221.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-07-16 12:53:55 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QfStyhGBFvpxhENQx+JW1PprUGZKCBXsPoEMABgkYT9eh+J6XxKKQNNnb4gIi9EYZ+xXMAh+t82ZGcIVC7Zy8Q==", "user"=>{"email"=>"babanovs@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'babanovs@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+  Rendered shared/_sign_in.html.erb (1.8ms)
+  Rendered shared/_sign_up.html.erb (1.3ms)
+Completed 200 OK in 907ms (Views: 381.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-07-16 12:54:04 +0400
+
+
+Started POST "/users" for 127.0.0.1 at 2015-07-16 12:54:26 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SP5LuNxQc7irAKlWF3a19GqfMgoQ99ms69O1NZsrAINXjQQIksPvAgnjhY7YHzI49xg1XFKBe41MS3sgiLkTTQ==", "user"=>{"email"=>"babanovs10@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'babanovs10@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.0ms)
+  Rendered shared/_sign_in.html.erb (6.5ms)
+  Rendered shared/_sign_up.html.erb (9.2ms)
+Completed 200 OK in 558ms (Views: 349.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:54:30 +0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.9ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (7.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (26.9ms)
+  Rendered shared/_sign_in.html.erb (1.7ms)
+  Rendered shared/_sign_up.html.erb (1.5ms)
+Completed 200 OK in 316ms (Views: 293.4ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-07-16 12:54:47 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OkC0CsNaqzUcRqGAWWuAuASHp+DDju/xldCOr1/sd24lM/u6jck3j76ljViWAgd0mQCgtoH4TdAySEC6TH5koA==", "user"=>{"email"=>"babanovs10@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'babanovs10@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.7ms)
+  Rendered shared/_sign_in.html.erb (19.8ms)
+  Rendered shared/_sign_up.html.erb (3.3ms)
+Completed 200 OK in 874ms (Views: 617.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-07-16 12:55:19 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4A3Vv/j54ZapKOIrzHI+/s1KrWWR+KL7ViIBaRbHxN//fpoPtmp9LAvLzvMDG7kyUM2qM9OOANrxus98BVXXEQ==", "user"=>{"email"=>"babanovs10@gmail.com", "name"=>"babanovs10", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (8.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = $1 LIMIT 1  [["slug", "babanovs10"]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'babanovs10@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (133.6ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "slug", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "babanovs10"], ["email", "babanovs10@gmail.com"], ["encrypted_password", "$2a$10$4sB6IJtnkynb8Z7ihDCM4.O/33HvGq7XqTEKtZAbF/3hogJkgrQBi"], ["slug", "babanovs10"], ["created_at", "2015-07-16 08:55:20.067297"], ["updated_at", "2015-07-16 08:55:20.067297"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["last_sign_in_at", "2015-07-16 08:55:20.205600"], ["current_sign_in_at", "2015-07-16 08:55:20.205600"], ["last_sign_in_ip", "127.0.0.1/32"], ["current_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2015-07-16 08:55:20.206933"], ["id", 2]]
+  [1m[35m (115.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 597ms (ActiveRecord: 260.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:55:20 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (0.3ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 808ms (Views: 784.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:56:12 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (15.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (5.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 515ms (Views: 480.4ms | ActiveRecord: 22.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-07-16 12:56:13 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FD7UNfmECnZETBxzexITv496M1jf3473lD3pqQDMSW4LTZuFtxeWzOavMKu0e5RzEv00Dp2pLNYzpSe8E15aoA=="}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (1.7ms)[0m  BEGIN
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:56:14 +0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (2.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (21.5ms)
+  Rendered shared/_sign_in.html.erb (3.9ms)
+  Rendered shared/_sign_up.html.erb (3.5ms)
+Completed 200 OK in 481ms (Views: 447.4ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-07-16 12:56:18 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QJUqXB6eih9xDiOvUQZ2UBBWrTP14fZPg3HXBspF9bnIHPQbTLjIf+2HjIEzOjcpLcG+3oqrXg+INj3gudKT4Q==", "user"=>{"email"=>"", "name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (2.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.3ms)
+  Rendered shared/_sign_in.html.erb (2.8ms)
+  Rendered shared/_sign_up.html.erb (3.2ms)
+Completed 200 OK in 376ms (Views: 336.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 12:57:50 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "five"]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-07-16 12:57:50 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+  Rendered shared/_sign_in.html.erb (2.3ms)
+  Rendered shared/_sign_up.html.erb (2.8ms)
+Completed 200 OK in 210ms (Views: 208.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/six" for 127.0.0.1 at 2015-07-16 12:57:55 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"six"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "six"]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-07-16 12:57:55 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered shared/_sign_in.html.erb (2.7ms)
+  Rendered shared/_sign_up.html.erb (4.0ms)
+Completed 200 OK in 204ms (Views: 203.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2015-07-16 12:58:09 +0400
+Processing by Admin::DashboardController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:58:09 +0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+  Rendered shared/_sign_in.html.erb (4.3ms)
+  Rendered shared/_sign_up.html.erb (19.5ms)
+Completed 200 OK in 342ms (Views: 331.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-07-16 12:59:15 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9JjQOk4Iu9VZ5Q8zWTYz5eppveqvsHw/7gTQnG4N0uB8EQ59HC75tcVsoB07CnKc1/6uB9D61H/lQzp6HZq0uA==", "user"=>{"email"=>"babanovs10@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "babanovs10@gmail.com"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["current_sign_in_at", "2015-07-16 08:59:15.913258"], ["sign_in_count", 2], ["updated_at", "2015-07-16 08:59:15.916204"], ["id", 2]]
+  [1m[36m (50.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 323ms (ActiveRecord: 51.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:59:16 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (2.9ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 548ms (Views: 507.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 12:59:18 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "five"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 08:59:18.634550"], ["ends_at", "2015-07-16 08:59:18.634550"], ["average_time", "2015-07-16 08:59:18.634550"]]
+  [1m[35m (502.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 672ms (Views: 149.6ms | ActiveRecord: 504.5ms)
+
+
+Started GET "/posts/six" for 127.0.0.1 at 2015-07-16 12:59:22 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"six"}
+  [1m[36mPost Load (4.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "six"]]
+  [1m[35mUser Load (5.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 6], ["punchable_type", "Post"], ["starts_at", "2015-07-16 08:59:22.206725"], ["ends_at", "2015-07-16 08:59:22.206725"], ["average_time", "2015-07-16 08:59:22.206725"]]
+  [1m[35m (6.8ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.6ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 6], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 276ms (Views: 208.1ms | ActiveRecord: 26.4ms)
+
+
+Started GET "/users/babanovs10" for 127.0.0.1 at 2015-07-16 12:59:24 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"babanovs10"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."slug" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["slug", "babanovs10"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 237ms (Views: 228.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2015-07-16 12:59:27 +0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 215ms (Views: 212.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/babanovs10" for 127.0.0.1 at 2015-07-16 12:59:29 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"babanovs10"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."slug" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["slug", "babanovs10"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (0.4ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 297ms (Views: 282.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:59:30 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (3.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 237ms (Views: 207.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2015-07-16 12:59:36 +0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (0.9ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:59:36 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 346ms (Views: 330.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-07-16 12:59:41 +0400
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (5.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.8ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (4.1ms)
+  Rendered posts/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 377ms (Views: 322.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-07-16 12:59:43 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 226ms (Views: 209.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 12:59:48 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (3.3ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (5.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 598ms (Views: 556.4ms | ActiveRecord: 11.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-07-16 13:13:10 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (4.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0R7o60A1e3VIHyvoN7CnEI+ACG10/JLLlr9MBT+V0AhWt82Pa5KBlPEnhnnKZ51I1B9GyWu/VrIxEyvAzKn5tQ=="}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 156ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:13:10 +0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (79.4ms)
+  Rendered shared/_sign_in.html.erb (57.7ms)
+  Rendered shared/_sign_up.html.erb (17.1ms)
+Completed 200 OK in 1051ms (Views: 964.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:13:13 +0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (10.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (31.7ms)
+  Rendered shared/_sign_in.html.erb (3.1ms)
+  Rendered shared/_sign_up.html.erb (28.8ms)
+Completed 200 OK in 559ms (Views: 526.9ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:13:16 +0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (29.3ms)
+  Rendered shared/_sign_in.html.erb (2.9ms)
+  Rendered shared/_sign_up.html.erb (3.3ms)
+Completed 200 OK in 280ms (Views: 258.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2015-07-16 13:13:26 +0400
+Processing by Admin::DashboardController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:13:26 +0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.7ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+  Rendered shared/_sign_in.html.erb (3.0ms)
+  Rendered shared/_sign_up.html.erb (4.2ms)
+Completed 200 OK in 388ms (Views: 365.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/six" for 127.0.0.1 at 2015-07-16 13:13:28 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"six"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "six"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-07-16 13:13:28 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered shared/_sign_in.html.erb (1.6ms)
+  Rendered shared/_sign_up.html.erb (1.6ms)
+Completed 200 OK in 140ms (Views: 139.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/six" for 127.0.0.1 at 2015-07-16 13:13:37 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"six"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "six"]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-07-16 13:13:38 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.0ms)
+  Rendered shared/_sign_in.html.erb (7.8ms)
+  Rendered shared/_sign_up.html.erb (2.6ms)
+Completed 200 OK in 210ms (Views: 209.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:13:41 +0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+  Rendered shared/_sign_in.html.erb (1.5ms)
+  Rendered shared/_sign_up.html.erb (1.4ms)
+Completed 200 OK in 155ms (Views: 140.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 13:13:43 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "five"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-07-16 13:13:43 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+  Rendered shared/_sign_in.html.erb (3.1ms)
+  Rendered shared/_sign_up.html.erb (2.7ms)
+Completed 200 OK in 195ms (Views: 193.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:16:02 +0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (115.3ms)
+  Rendered shared/_sign_in.html.erb (4.0ms)
+  Rendered shared/_sign_up.html.erb (3.2ms)
+Completed 200 OK in 572ms (Views: 515.3ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 13:16:04 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "five"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:16:04.934553"], ["ends_at", "2015-07-16 09:16:04.934553"], ["average_time", "2015-07-16 09:16:04.934553"]]
+  [1m[36m (17.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (16.0ms)
+  Rendered shared/_sign_in.html.erb (3.8ms)
+  Rendered shared/_sign_up.html.erb (1.7ms)
+Completed 200 OK in 525ms (Views: 177.1ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/posts/six" for 127.0.0.1 at 2015-07-16 13:16:09 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"six"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "six"]]
+  [1m[36m (7.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 6], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:16:09.699636"], ["ends_at", "2015-07-16 09:16:09.699636"], ["average_time", "2015-07-16 09:16:09.699636"]]
+  [1m[36m (47.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 6], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (13.3ms)
+  Rendered shared/_sign_in.html.erb (2.7ms)
+  Rendered shared/_sign_up.html.erb (3.0ms)
+Completed 200 OK in 316ms (Views: 231.2ms | ActiveRecord: 60.0ms)
+
+
+Started GET "/posts/six" for 127.0.0.1 at 2015-07-16 13:17:46 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"six"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "six"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 6], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:17:46.824467"], ["ends_at", "2015-07-16 09:17:46.824467"], ["average_time", "2015-07-16 09:17:46.824467"]]
+  [1m[36m (72.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 6], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (5.0ms)
+  Rendered shared/_sign_in.html.erb (3.1ms)
+  Rendered shared/_sign_up.html.erb (3.9ms)
+Completed 200 OK in 277ms (Views: 165.7ms | ActiveRecord: 74.1ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 13:17:48 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "five"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:17:48.881148"], ["ends_at", "2015-07-16 09:17:48.881148"], ["average_time", "2015-07-16 09:17:48.881148"]]
+  [1m[36m (40.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (5.0ms)
+  Rendered shared/_sign_in.html.erb (2.6ms)
+  Rendered shared/_sign_up.html.erb (2.7ms)
+Completed 200 OK in 267ms (Views: 208.5ms | ActiveRecord: 41.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-07-16 13:17:56 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"43L9wM7lPjlwKrW/FMO/3ZYf0+IHWNoHTzjRszkAUFxQHJez9Tj/IBD1bK28vo4iS87uECpJZS1Wz9cLnzUBjA==", "user"=>{"email"=>"babanovs10@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "babanovs10@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2015-07-16 08:59:15.913258"], ["current_sign_in_at", "2015-07-16 09:17:56.309561"], ["sign_in_count", 3], ["updated_at", "2015-07-16 09:17:56.310919"], ["id", 2]]
+  [1m[36m (109.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/five
+Completed 302 Found in 326ms (ActiveRecord: 110.3ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 13:17:56 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "five"]]
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:17:56.539740"], ["ends_at", "2015-07-16 09:17:56.539740"], ["average_time", "2015-07-16 09:17:56.539740"]]
+  [1m[36m (115.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 579ms (Views: 419.8ms | ActiveRecord: 120.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-07-16 13:18:00 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 213ms (Views: 197.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/five" for 127.0.0.1 at 2015-07-16 13:18:01 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"five"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "five"]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (7.9ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 5], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:18:01.901062"], ["ends_at", "2015-07-16 09:18:01.901062"], ["average_time", "2015-07-16 09:18:01.901062"]]
+  [1m[35m (67.2ms)[0m  COMMIT
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 5], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 416ms (Views: 275.6ms | ActiveRecord: 80.3ms)
+
+
+Started GET "/users/babanovs10" for 127.0.0.1 at 2015-07-16 13:18:03 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"babanovs10"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."slug" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["slug", "babanovs10"]]
+  [1m[35mUser Load (5.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (3.8ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (1.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 321ms (Views: 265.8ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-07-16 13:18:08 +0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (1.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 550ms (Views: 518.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:18:11 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.6ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 245ms (Views: 228.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2015-07-16 13:18:13 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (10.5ms)
+  Rendered posts/new.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 340ms (Views: 321.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2015-07-16 13:18:38 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B7zOWmOu5oCfu8dv+jT35ka105SdbHmf0eg4ujyQ9DTsx6PNaHtKHGojHyWFLxPcO9XKeIK2ZgUlJEAB6pm7YA==", "post"=>{"title"=>"babanovspost", "slug"=>"babanovspost", "content"=>"babanovs10"}, "commit"=>"Create Post"}
+Unpermitted parameter: slug
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (1.5ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+Unpermitted parameter: slug
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mPost Exists (0.2ms)[0m  SELECT  1 AS one FROM "posts" WHERE ("posts"."id" IS NOT NULL) AND "posts"."slug" = $1 LIMIT 1  [["slug", "babanovspost"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "content", "user_id", "status", "slug", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "babanovspost"], ["content", "babanovs10"], ["user_id", 2], ["status", "deactivate"], ["slug", "babanovspost"], ["created_at", "2015-07-16 09:18:39.085248"], ["updated_at", "2015-07-16 09:18:39.085248"]]
+  [1m[35m (136.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/babanovspost
+Completed 302 Found in 501ms (ActiveRecord: 138.8ms)
+
+
+Started GET "/posts/babanovspost" for 127.0.0.1 at 2015-07-16 13:18:39 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"babanovspost"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "babanovspost"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 14], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:18:39.280267"], ["ends_at", "2015-07-16 09:18:39.280267"], ["average_time", "2015-07-16 09:18:39.280267"]]
+  [1m[35m (140.2ms)[0m  COMMIT
+  [1m[36mUser Load (6.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (7.2ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 14], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 580ms (Views: 405.1ms | ActiveRecord: 155.5ms)
+
+
+Started GET "/users/babanovs10" for 127.0.0.1 at 2015-07-16 13:18:47 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"babanovs10"}
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."slug" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["slug", "babanovs10"]]
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 274ms (Views: 247.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/posts/babanovspost" for 127.0.0.1 at 2015-07-16 13:18:53 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"babanovspost"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "babanovspost"]]
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["punchable_id", 14], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:18:53.371444"], ["ends_at", "2015-07-16 09:18:53.371444"], ["average_time", "2015-07-16 09:18:53.371444"]]
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2  [["punchable_id", 14], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 254ms (Views: 202.6ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/post" for 127.0.0.1 at 2015-07-16 13:18:56 +0400
+
+ActionController::RoutingError (No route matches [GET] "/post"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/danila/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/danila/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/danila/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (48.7ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (779.2ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (165.7ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (16.0ms)
+  Rendered /home/danila/.rvm/gems/ruby-2.2.2/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (390.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-07-16 13:18:59 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (8.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mRole Load (2.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 287ms (Views: 265.6ms | ActiveRecord: 11.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-07-16 13:19:04 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ag0Ncd6/izCNJ6HegHJWqpSdcblzaC5uGcEk936bJAyBdmDm1WonrHi/eZT/abKQ6f1oVWyyMfTtDVxMqJJrWA=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 19ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-07-16 13:19:05 +0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+  Rendered shared/_sign_in.html.erb (8.1ms)
+  Rendered shared/_sign_up.html.erb (3.4ms)
+Completed 200 OK in 499ms (Views: 493.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/babanovspost" for 127.0.0.1 at 2015-07-16 13:19:09 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"babanovspost"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "babanovspost"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:19:09 +0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (12.3ms)
+  Rendered shared/_sign_in.html.erb (2.9ms)
+  Rendered shared/_sign_up.html.erb (3.2ms)
+Completed 200 OK in 611ms (Views: 599.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-07-16 13:19:19 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W/qdNWrknVNvznkoJRWY0qGoYZaPKf3gaME5yx8U72CqBGNLxDRaXE0aXZN2LRu75Qhwq2JzuCOGQYJDn/0S+A==", "user"=>{"email"=>"babanovs5@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "babanovs5@gmail.com"]]
+  [1m[36m (2.9ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2015-07-13 09:41:57.012695"], ["current_sign_in_at", "2015-07-16 09:19:19.750659"], ["sign_in_count", 4], ["updated_at", "2015-07-16 09:19:19.755903"], ["id", 1]]
+  [1m[36m (126.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 436ms (ActiveRecord: 133.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:19:19 +0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (1.7ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.9ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 495ms (Views: 438.9ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/users/danila" for 127.0.0.1 at 2015-07-16 13:19:22 +0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"danila"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."slug" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["slug", "danila"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (3.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (16.4ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (74.8ms)
+Completed 200 OK in 381ms (Views: 328.8ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2015-07-16 13:19:34 +0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (11.3ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered admin/dashboard/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 266ms (Views: 215.2ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 13:19:36 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 349ms (Views: 326.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/posts?page=2" for 127.0.0.1 at 2015-07-16 13:19:39 +0400
+Processing by Admin::PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.6ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (8.8ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 10[0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered admin/posts/index.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 352ms (Views: 291.6ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/admin/posts/babanovspost/edit" for 127.0.0.1 at 2015-07-16 13:19:41 +0400
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"babanovspost"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "babanovspost"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered admin/posts/_form.html.erb (5.0ms)
+  Rendered admin/posts/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 151ms (Views: 142.6ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/admin/posts/babanovspost" for 127.0.0.1 at 2015-07-16 13:19:43 +0400
+Processing by Admin::PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z2dwh6dewMWmtV9Zfnd2a0XTBWAOyUw1Ayj3gsD64i4y38Jul22AXR+0IJzyVdjNuE3AvSIfo7PC67P7/fqWPA==", "post"=>{"title"=>"babanovspost", "slug"=>"babanovspost", "content"=>"babanovs10", "status"=>"active"}, "commit"=>"Update Post", "id"=>"babanovspost"}
+  [1m[36mPost Load (3.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1[0m  [["slug", "babanovspost"]]
+  [1m[35mUser Load (3.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mRole Load (12.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Unpermitted parameter: slug
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "posts" SET "status" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["status", "active"], ["updated_at", "2015-07-16 09:19:43.637009"], ["id", 14]]
+  [1m[35m (69.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/posts
+Completed 302 Found in 113ms (ActiveRecord: 88.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2015-07-16 13:19:43 +0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 10 OFFSET 0[0m
+  [1m[35m (3.0ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered admin/posts/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 451ms (Views: 433.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:19:47 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mRole Load (2.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (1.7ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0[0m  [["status", "active"]]
+  [1m[35mUser Load (6.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (3.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 305ms (Views: 255.9ms | ActiveRecord: 16.9ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-07-16 13:19:51 +0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/0bv/sHGC41BURYVA/o1zHR5wkUaxcvY6IZdTheiwoqq/l0X8fVLFfhQadCP2JtqiecHmDYTJF4pRRk3KqK2mA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (3.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-16 13:19:51 +0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."status" = $1 LIMIT 10 OFFSET 0  [["status", "active"]]
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/index.html.erb within layouts/application (30.9ms)
+  Rendered shared/_sign_in.html.erb (9.0ms)
+  Rendered shared/_sign_up.html.erb (2.8ms)
+Completed 200 OK in 608ms (Views: 588.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/babanovspost" for 127.0.0.1 at 2015-07-16 13:19:54 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"babanovspost"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."slug" = $1  ORDER BY "posts"."id" ASC LIMIT 1  [["slug", "babanovspost"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "punches" ("punchable_id", "punchable_type", "starts_at", "ends_at", "average_time") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["punchable_id", 14], ["punchable_type", "Post"], ["starts_at", "2015-07-16 09:19:54.027735"], ["ends_at", "2015-07-16 09:19:54.027735"], ["average_time", "2015-07-16 09:19:54.027735"]]
+  [1m[36m (152.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT SUM("punches"."hits") FROM "punches" WHERE "punches"."punchable_id" = $1 AND "punches"."punchable_type" = $2[0m  [["punchable_id", 14], ["punchable_type", "Post"]]
+  Rendered posts/show.html.erb within layouts/application (6.9ms)
+  Rendered shared/_sign_in.html.erb (4.5ms)
+  Rendered shared/_sign_up.html.erb (3.2ms)
+Completed 200 OK in 425ms (Views: 258.0ms | ActiveRecord: 153.8ms)

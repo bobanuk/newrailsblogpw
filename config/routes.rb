@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  namespace :admin do
+    resources :posts
+    get '', to: 'dashboard#index', as: '/'
+  end
+
   resources :posts
   resources :roles
   devise_for :users, :controllers => { omniauth_callbacks: "users/omniauth_callbacks" }
