@@ -1,10 +1,12 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.paginate(:page => params[:page], :per_page => 10)
+    @posts = Post.active.paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /posts/1
@@ -27,6 +29,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user_id = current_user.id
+    @post.status = "deactivate"
 
     respond_to do |format|
       if @post.save
@@ -71,6 +74,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content, :user_id)
+      params.require(:post).permit(:title, :content, :user_id, :status)
     end
 end

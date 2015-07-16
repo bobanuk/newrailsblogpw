@@ -28,6 +28,17 @@ class User < ActiveRecord::Base
     user
   end
 
+  def admin?
+    self.role.name == "admin"
+  end
+
+  def moderator?
+    self.role.name == "moderator"
+  end
+
+  def user?
+    self.role.name == "user"
+  end
 
   private
   def avatar_size

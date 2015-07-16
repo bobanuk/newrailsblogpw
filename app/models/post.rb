@@ -6,4 +6,7 @@ class Post < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, use: :slugged
 
+  scope :active, -> { where status: 'active'}
+  scope :deactivate, -> { where status: 'deactivate'}
+
 end
