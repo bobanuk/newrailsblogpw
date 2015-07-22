@@ -32,6 +32,16 @@
   <%= social_share_button_tag(@post.title) %>
 </p>
 
+<p>
+  <strong>Tags:</strong>
+  <% @post.tags.any? %>
+  <% @post.tags.each do |tag| %>
+    <span class="label label-teal">
+        <%= link_to tag.name, tag_path(tag.name) %>
+     </span>
+  <% end %>
+</p>
+
 <% if can? :update, @post %>
     <%= link_to 'Edit', edit_post_path(@post) %> |
 <% end %>
