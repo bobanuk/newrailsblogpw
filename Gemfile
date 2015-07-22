@@ -38,6 +38,7 @@ gem 'omniauth-oauth2', '1.3.1'
 gem "omniauth-google-oauth2"
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'cancancan', '~> 1.10'
+gem 'rails_admin'
 
 # Use Unicorn as the app server
 gem 'unicorn'
