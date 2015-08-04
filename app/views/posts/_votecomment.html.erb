@@ -1,0 +1,8 @@
+<p>
+  <b>Vote:</b>
+  <%= pluralize comment.reputation_for(:votes).to_i, "votecomment" %>
+  <% if user_signed_in? %>
+      <%= link_to "up", votecomment_post_comment_path(@post, comment, type: "up"), method: "post", remote: true %>
+      | <%= link_to "down", votecomment_post_comment_path(@post, comment, type: "down"), method: "post", remote: true %>
+  <% end %>
+</p>

@@ -25,6 +25,7 @@
         <%= link_to tag.name, tag_path(tag.name) %>
      </span>
           <% end %></td>
+        <td><%= post.comments.count %></td>
         <td><%= link_to 'Show', post %></td>
 
         <% if can? :update, post %>

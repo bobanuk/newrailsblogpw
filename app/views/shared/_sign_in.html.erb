@@ -6,7 +6,7 @@
         <h4 class="modal-title" id="myModalLabel">Sign in</h4>
       </div>
       <div class="modal-body">
-        <%= form_for(User.new, url: session_path(:user)) do |f| %>
+        <%= form_for(User.new, url: session_path(:user), html:{id: 'sign_in_user'}) do |f| %>
             <div class="field">
               <%= f.label :email %><br />
               <%= f.email_field :email, autofocus: true %>

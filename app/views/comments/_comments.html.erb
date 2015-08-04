@@ -1,0 +1,21 @@
+<tr id="comment_<%= @comment.id %>">
+
+  <td><%= @comment.comment %></td>
+
+  <td><%= @comment.user.name %></td>
+
+  <td><%= image_tag @comment.user.avatar.url, class: 'img-circle', size: "50x50" %></td>
+
+  <td><%= @comment.created_at.strftime("%d.%m.%Y в %H:%M") %></td>
+
+  <% if can? :destroy, @comment %>
+      <td><%= link_to 'Destroy', post_comment_path(@post, @comment.id),
+                      :confirm => 'Are you sure?',
+                      :method => :delete, :remote => true %></td>
+  <% end %>
+
+  <td><div id='votecomment_<%= @comment.id %>'>
+    <%= render "votecomment", :comment => @post.comments%>
+  </div></td>
+
+</tr>

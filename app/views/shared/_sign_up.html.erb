@@ -6,9 +6,9 @@
         <h4 class="modal-title" id="myModalLabel">Sign up</h4>
       </div>
       <div class="modal-body">
-        <%= form_for(User.new, url: registration_path(:user)) do |f| %>
+        <%= form_for(User.new, url: registration_path(:user), validate: true, html:{id: 'sign_up_user'}) do |f| %>
 
-            <div class="field">
+      <div class="field">
               <%= f.label :email %><br />
               <%= f.email_field :email, autofocus: true %>
             </div>
@@ -28,6 +28,10 @@
             <div class="field">
               <%= f.label :password_confirmation %><br />
               <%= f.password_field :password_confirmation, autocomplete: "off" %>
+            </div>
+
+            <div class="field">
+              <div class="g-recaptcha" data-sitekey="6LdzyAoTAAAAAJkQMsQt_Vn4IXcIupj6gIt4-V-c"></div>
             </div>
 
             <div class="actions">

@@ -1,0 +1,16 @@
+I"(function() {
+  $().ready(function() {
+    $('#new_comment').validate({
+      rules: {
+        'comment[comment]': {
+          required: true
+        }
+      },
+      messages: {
+        'comment[comment]': 'Please enter a valid comment'
+      }
+    });
+  });
+
+}).call(this);
+:ET

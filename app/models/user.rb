@@ -10,9 +10,15 @@ class User < ActiveRecord::Base
 
   has_many :posts
   belongs_to :role
+  has_many :comments
 
   validates :name, presence: true
   validate  :avatar_size
+  validates_presence_of :name, :email
+  validates_presence_of :password, :on => :create
+  validates_presence_of :name, :with => /^[-\w\._@]+$/i, :allow_blank => true, :message => "should only contain letters, numbers, or .-_@"
+  validates_length_of :password, :minimum => 4, :allow_blank => true
+  validates_confirmation_of :password
 
   def self.find_for_google_oauth2(auth)
     user = User.where(email: auth.info.email).first
@@ -39,6 +45,8 @@ class User < ActiveRecord::Base
   def user?
     self.role.name == "user"
   end
+
+
 
   private
   def avatar_size

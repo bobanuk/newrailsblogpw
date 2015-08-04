@@ -1,0 +1,1 @@
+$('#votecomment_<%= @comment.id %>').html('<%= escape_javascript render("votecomment", :comment => @post.comments) %>');

@@ -1,0 +1,25 @@
+I"í(function() {
+  $().ready(function() {
+    var alert;
+    $('#new_comment').validate({
+      rules: {
+        'comment[comment]': {
+          required: true
+        }
+      },
+      messages: {
+        'comment[comment]': 'Please enter a valid comment'
+      }
+    });
+    return;
+    return alert = $('#comment_error');
+  });
+
+  alert.html('You can not send messages more than once every 5 seconds');
+
+  setTimeout((function() {
+    alert.hide('#comment_error');
+  }), 5100);
+
+}).call(this);
+:ET

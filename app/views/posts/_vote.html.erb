@@ -1,0 +1,6 @@
+<p>
+  <b>Vote:</b>
+  <%= pluralize @post.reputation_for(:votes).to_i, "vote" %>
+  <%= link_to "up", vote_post_path(@post, type: "up"), method: "post", remote: true %>
+  | <%= link_to "down", vote_post_path(@post, type: "down"), method: "post", remote: true %>
+</p>

@@ -14,6 +14,13 @@ RailsAdmin.config do |config|
     redirect_to main_app.root_path unless current_user.try(:admin?)
   end
 
+  config.model 'Post' do
+    edit do
+      field :tag_list
+      field :title
+      field :content
+    end
+  end
 
   ## == PaperTrail ==
   # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0

@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :posts
   resources :roles
-  devise_for :users, :controllers => { omniauth_callbacks: "users/omniauth_callbacks" }
-  resources :posts
+  devise_for :users, :controllers => { registrations: 'registrations', omniauth_callbacks: "users/omniauth_callbacks" }
+
+
+  resources :posts do
+    member { post :vote }
+    resources :comments do
+      member { post :votecomment }
+    end
+  end
+
   resources :users
   get 'tags/:tag', to: 'posts#index', as: :tag
   # The priority is based upon order of creation: first created -> highest priority.

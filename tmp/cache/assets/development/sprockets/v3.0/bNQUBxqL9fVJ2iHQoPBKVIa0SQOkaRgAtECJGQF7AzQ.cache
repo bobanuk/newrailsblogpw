@@ -1,0 +1,90 @@
+I",	(function() {
+  $().ready(function() {
+    $('#sign_up_user').validate({
+      rules: {
+        'user[email]': {
+          required: true
+        },
+        'user[password]': {
+          required: true,
+          minlength: 5
+        },
+        'user[password_confirmation]': {
+          required: true,
+          minlength: 5,
+          equalTo: '#password'
+        }
+      },
+      messages: {
+        'user[email]': 'Please enter a valid email address',
+        'user[password]': {
+          required: 'Please provide a password',
+          minlength: 'Your password must be at least 5 characters long'
+        },
+        'user[password_confirmation]': {
+          required: 'Please provide a password',
+          minlength: 'Your password must be at least 5 characters long',
+          equalTo: 'Please enter the same password as above'
+        }
+      }
+    });
+  });
+
+  $().ready(function() {
+    $('#sign_in_user').validate({
+      rules: {
+        'user[email]': {
+          required: true
+        },
+        'user[password]': {
+          required: true,
+          minlength: 5
+        }
+      },
+      messages: {
+        'user[email]': 'Please enter a valid email address',
+        'user[password]': {
+          required: 'Please provide a password',
+          minlength: 'Your password must be at least 5 characters long'
+        }
+      }
+    });
+  });
+
+  $().ready(function() {
+    $('#new_user').validate({
+      rules: {
+        'user[name]': {
+          required: true
+        },
+        'user[email]': {
+          required: true
+        },
+        'user[password]': {
+          required: true,
+          minlength: 5
+        },
+        'user[password_confirmation]': {
+          required: true,
+          minlength: 5,
+          equalTo: '#password'
+        }
+      },
+      messages: {
+        'user[name]': 'Please enter a valid name',
+        'user[email]': 'Please enter a valid email address',
+        'user[password]': {
+          required: 'Please provide a password',
+          minlength: 'Your password must be at least 5 characters long'
+        },
+        'user[password_confirmation]': {
+          required: 'Please provide a password',
+          minlength: 'Your password must be at least 5 characters long',
+          equalTo: 'Please enter the same password as above'
+        }
+      }
+    });
+  });
+
+}).call(this);
+:ET

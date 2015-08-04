@@ -24,6 +24,8 @@ class Ability
         can :read, Post, user_id: user.id, status: "deactivate"
         can :create, Post
         can [:read], User, :id => user.id
+        can :create, Comment
+        can  :destroy, Comment, user_id: user.id
       else
         can :read, Post, status: "active"
       end
