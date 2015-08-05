@@ -42,7 +42,6 @@ gem 'rails_admin'
 gem 'acts-as-taggable-on'
 gem 'acts_as_commentable'
 gem 'activerecord-reputation-system'
-gem "recaptcha", :require => "recaptcha/rails"
 
 # Use Unicorn as the app server
 gem 'unicorn'

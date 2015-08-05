@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :roles
-  devise_for :users, :controllers => { registrations: 'registrations', omniauth_callbacks: "users/omniauth_callbacks" }
+  devise_for :users, :controllers => {omniauth_callbacks: "users/omniauth_callbacks" }
 
 
   resources :posts do
