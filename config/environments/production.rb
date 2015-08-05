@@ -77,17 +77,21 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'railsblog.pw' }
 
-  ActionMailer::Base.smtp_settings = {
-      :address        => 'smtp.sendgrid.net',
-      :port           => '587',
-      :authentication => :plain,
-      :user_name      => 'bobanuk',
-      :password       =>  '0000099999qw',
-      :domain         => 'railsblog.pw',
-      :enable_starttls_auto => true
-  }
+  config.cache_classes = true
+  config.eager_load = true
+
+  config.action_mailer.default_url_options = { :host => 'railsblog.pw' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
+      address: 'smtp.gmail.com',
+      port: 587,
+      domain: 'railsblog.pw',
+      user_name: 'babanovs5@gmail.com',
+      password: '0000099999qw',
+      authentication: 'plain',
+      enable_starttls_auto: true }
 
 end
