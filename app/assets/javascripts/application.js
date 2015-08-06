@@ -15,6 +15,8 @@
 //= require social-share-button
 //= require bootstrap-sprockets
 //= require jquery.validate
+//= require tinymce
+//= require tinymce-jquery
 //= require turbolinks
 //= require_tree .
 

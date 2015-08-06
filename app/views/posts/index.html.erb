@@ -16,7 +16,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= truncate(post.content , length: 30) %></td>
+        <td><%= truncate(post.content, length: 30, escape: false).html_safe %></td>
         <td><%= post.user.name %></td>
         <td><%= post.created_at.strftime '%d.%m.%Y' %></td>
         <td><% post.tags.any? %>

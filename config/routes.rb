@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     end
   end
 
+  post '/tinymce_assets' => 'tinymce_assets#create'
+
   resources :users
   get 'tags/:tag', to: 'posts#index', as: :tag
   # The priority is based upon order of creation: first created -> highest priority.

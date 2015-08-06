@@ -42,6 +42,8 @@ gem 'rails_admin'
 gem 'acts-as-taggable-on'
 gem 'acts_as_commentable'
 gem 'activerecord-reputation-system'
+gem 'tinymce-rails'
+gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 
 # Use Unicorn as the app server
 gem 'unicorn'

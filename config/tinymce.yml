@@ -1,0 +1,10 @@
+width: 600
+height: 200
+toolbar:
+  - styleselect | bold italic | undo redo | alignleft aligncenter alignright
+plugins:
+  - image
+  - link
+  - uploadimage
+  - textcolor
+  - code
